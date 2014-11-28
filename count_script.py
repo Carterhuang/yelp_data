@@ -43,4 +43,4 @@ for cate, count in categories_count.items():
 with open(sys.argv[2], 'w') as ff:
     while hp:
         item = heappop(hp)
-        ff.write(str((item[1], item[0] * (-1))) + '\n')
+        ff.write('%s %d\n'%(item[1], item[0]*(-1)))
